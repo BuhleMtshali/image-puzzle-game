@@ -8,19 +8,68 @@
 <title>Sliding Image Puzzle</title>
 </head>
 <body>
-    <div class="cover-screen">
-    <p id="results"></p>
-    <button id="start-btn">Start Game</button>
+   <div class="drag" id="drag">
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block1" style="--img:url(assets/p1.jpg)" ondragstart="drag(event)"></div>
     </div>
-    <!-- end of cover screen -->
-    <div class="moves"></div>
-    <!-- end of moves -->
-    <div class="slider-game">
-        <div class="container"></div>
-        <!-- end of contaiener -->
-         <div class="original-image">
-        <img src="assets/raoul-droog-yMSecCHsIBc-unsplash.jpg" alt="cat image">
-         </div>
+    <!-- end of images div 1-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block2" style="--img:url(assets/p2.jpg)" ondragstart="drag(event)"></div>
     </div>
+    <!-- end of images div 2-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block3" style="--img:url(assets/p3.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 3-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block4" style="--img:url(assets/p4.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 4-->
+    
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block5" style="--img:url(assets/p5.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 5-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block6" style="--img:url(assets/p6.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 6-->
+    
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block7" style="--img:url(assets/p7.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 7-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block8" style="--img:url(assets/p8.jpg)" ondragstart="drag(event)"></div>
+    </div>
+    <!-- end of images div 8-->
+
+    <div class="dragbox">
+    <div class="images" draggable="true" id="block9" style="--img:url(assets/p9.jpg)" ondragstart="drag(event)"></div>
+   </div>
+    <!-- end of images div 9-->
+   </div>
+   <!-- end of drag div -->
+
+   <!-- board div -->
+   <div class="board">
+    <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="dropBox"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   </div>
+
+<button class="reset" onclick="window.location.reload()">Reset Puzzle</button>
+<script src="app.js"></script>
 </body>
 </html>

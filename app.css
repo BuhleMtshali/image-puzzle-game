@@ -7,3 +7,65 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2f363e;
+    gap: 50px;
+}
+
+.drag{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+    gap: 10px;
+    cursor: grab;
+}
+
+.drag .dragbox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #0003;
+}
+
+.images{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--img);
+    background-size: cover;
+}
+
+.reset{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.board{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.dropBox{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: #0003;
+}
